@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: 'Fredoka', 'Comic Neue', 'Patrick Hand', cursive;
+  font-size: 20px;
+  color: #df9e9e; /*color for font*/
+
+  background-image: url('images/background2.jpg');
+  background-size: cover;            
+  background-repeat: no-repeat;       
+  background-position: center center; 
+  background-attachment: fixed; 
+  
+
+}
+
+header {
+  background-color: #75414d; 
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #855761;
+  padding: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  background-color: #bf9793;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #964630;
+}
+
+.text-container {
+  grid-column: span 2;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 600px) {
+  .text-container {
+    grid-column: span 1;
+  }
+}
+
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  
+}
+
+/* Travel Page*/
+.image-container2 {
+  display: grid;
+  grid-template-columns: repeat(13,1fr); /* x-axis */
+  grid-template-rows: repeat(6, 1fr); /* y-axis */
+  
+  
+}
+
+
+.bozaicar{
+  width: 300px;
+  grid-column: 2/7; /* x-axis */
+  grid-row: 1/2; /* y-axis */
+  transform: rotate(-15deg) translateY(30px);
+  
+}
+
+.bozaisea{
+  width: 1280px;
+  grid-column: 1/14; /* x-axis */
+  grid-row: 1/2; /* y-axis */
+  place-items: center;
+  z-index: -1;
+}
+
+.bozaifriends{
+  width: 600px;
+  grid-column: 6/11; /* x-axis */
+  grid-row: 2/3; /* y-axis */
+  transform: rotate(25deg) ;
+  z-index: 1;
+}
+
+
+.bozaiback{
+  width: 600px;
+  transform: rotate(-15deg) translateY(100px); 
+  grid-column: 3/14; /* x-axis */
+  grid-row: 2/4; /* y-axis */
+   z-index: 1;
+}
+
+.bozaiflower{
+  width: 1280px;
+  grid-column: 1/14; /* x-axis */
+  grid-row: 4/7; /* y-axis */
+  z-index: -1;
+}
+
+.bozaisit{
+  width: 200px;
+  transform: rotate(-30deg)translateY(-180px); 
+  grid-column: 11/14; /* x-axis */
+  grid-row: 3/4; /* y-axis */
+  z-index: 1;
+  
+}
+
+.bozaigarden{
+  width: 400px;
+  transform: rotate(-20deg)translateY(-150px); 
+  grid-column: 4/14; /* x-axis */
+  grid-row: 4/5; /* y-axis */
+  z-index: 1;
+  
+}
+
+.bozaiwall{
+  width: 1100px;
+  grid-column: 2/14; /* x-axis */
+  grid-row: 7/7; /* y-axis */
+  
+}
+
+.bozaiwalk{
+  width: 1100px;
+  transform: rotate(-10deg); 
+  grid-column: 2/14; /* x-axis */
+  grid-row: 3/4; /* y-axis */
+  
+}
+
+
+
+.bozaiwindow{
+  transform: translateY(-250px); 
+  grid-column: 7/14;
+  grid-row: 5/7;
+  z-index: -1;
+}
+
+.text-container2 {
+  
+  grid-row: 5/6; 
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+

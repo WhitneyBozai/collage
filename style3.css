@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  font-family: 'Fredoka', 'Comic Neue', 'Patrick Hand', cursive;
+  font-size: 20px;
+  color: #df9e9e; /*color for font*/
+
+  background-image: url('images/background3.jpg');
+  background-size: cover;            
+  background-repeat: no-repeat;       
+  background-position: center center; 
+  background-attachment: fixed; 
+
+}
+
+
+
+header {
+  background-color: #75414d; 
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #855761;
+  padding: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  background-color: #bf9793;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #964630;
+}
+
+
+.text-container {
+  grid-column: span 2;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 600px) {
+  .text-container {
+    grid-column: span 1;
+  }
+}
+
+
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  
+}
+
+
+
+.image-container3 {
+  display: grid;
+  grid-template-columns: repeat(13,1fr); /* x-axis */
+  grid-template-rows: repeat(5, 1fr); /* y-axis */
+  
+  
+}
+
+
+.bozai1{
+  width: 800px;
+  grid-column: 1/7; /* x-axis */
+  grid-row: 1/2; /* y-axis */
+  transform: rotate(0deg) ;
+  
+}
+
+.bozai2{
+  width: 300px;
+  grid-column: 7/13; /* x-axis */
+  grid-row: 2/3; /* y-axis */
+  transform: translateY(-500px);
+  z-index: 1;
+}
+
+.bozai3{
+  width: 600px;
+  grid-column: 3/11; /* x-axis */
+  grid-row: 2/3; /* y-axis */
+  transform: rotate(25deg)translateY(-200px) ;
+  z-index: 1;
+}
+
+
+.bozai4{
+  width: 600px;
+  transform: rotate(-15deg) translateY(100px); 
+  grid-column: 3/14; /* x-axis */
+  grid-row: 2/4; /* y-axis */
+   z-index: 1;
+}
+
+.bozai5{
+  width: 500px;
+  grid-column: 1/14; /* x-axis */
+  grid-row: 4/7; /* y-axis */
+  z-index: -1;
+}
+
+.bozai6{
+  width: 530px;
+  transform: translateX(-50px); 
+  grid-column: 7/13; /* x-axis */
+  grid-row: 1/2; /* y-axis */
+  z-index: 2;
+  
+}
+
+.bozai7{
+  width: 400px;
+  transform: translateY(-550px); 
+  grid-column: 7/14; /* x-axis */
+  grid-row: 3/4; /* y-axis */
+  z-index: 1;
+  
+}
+
+.bozai8{
+  width: 1100px;
+   transform: translateY(-150px); 
+  grid-column: 2/14; /* x-axis */
+  grid-row: 5/6; /* y-axis */
+  
+}
+
+.bozai9{
+  width: 900px;
+  transform: rotate(-10deg); 
+  grid-column: 2/14; /* x-axis */
+  grid-row: 3/4; /* y-axis */
+  
+}
+
+
+
+.bozai10{
+  width: 700px;
+  transform: rotate(10deg) translateY(250px); 
+  grid-column: 2/14;
+  grid-row: 4/7;
+  z-index: -2;
+}
+
+.text-container3 {
+  
+  grid-row: 5/6; 
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

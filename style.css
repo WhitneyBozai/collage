@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: 'Fredoka', 'Comic Neue', 'Patrick Hand', cursive;
+  font-size: 20px;
+  color: #df9e9e; /*color for font*/
+
+        
+  background-image: url('images/background1.jpg');
+  background-size: cover;            
+  background-repeat: no-repeat;       
+  background-position: center center; 
+  background-attachment: fixed; 
+  
+
+}
+
+
+
+header {
+  background-color: #75414d; 
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #855761;
+  padding: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  background-color: #bf9793;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #964630;
+}
+
+
+.text-container {
+  grid-column: span 2;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 600px) {
+  .text-container {
+    grid-column: span 1;
+  }
+}
+
+.image-container {
+  display: grid;
+  grid-template-rows: repeat(5,1fr);
+  
+  
+}
+
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  
+}
+
+.bozaiandbutterfly{
+  width: 900px;
+  grid-column: 1/9;
+  grid-row: 1/3;
+  z-index: -1;
+}
+
+.bozaiwindow{
+  width: 500px;
+  grid-column: 8/11;
+  grid-row: 2/3;
+  transform: translateY(-200px);
+  
+}
+
+.bozaibirthday{
+  grid-column: 2/9; /* x-axis */
+  grid-row: 2/3; /* y-axis */
+  transform: rotate(-15deg)translateY(250px);
+  z-index: 2;
+}
+
+.bozailaugh{
+  width: 380px;
+  grid-column: 9/14; /* x-axis */
+  grid-row: 1/2; /* y-axis */
+  z-index: 1;
+}
+
+.bozaipurple{
+  width: 360px;
+  grid-column: 9/14; /* x-axis */
+  grid-row: 3/4; /* y-axis */
+  z-index: 3;
+}
+
+
+.bozaismile{
+  width: 700px;
+  grid-column: 2/8; /* x-axis */
+  grid-row: 3/4; /* y-axis */
+  transform: rotate(-15deg)translateY(270px);
+  z-index: 1;
+}
+
+.bozaichristmas{
+  width: 400px;
+  grid-column: 8/14; /* x-axis */
+  grid-row: 4/5; /* y-axis */
+  transform:  translateX(150px)translateY(-350px);
+  z-index: 2;
+}
+
+.bozaibed{
+  width: 400px;
+  grid-column: 7/14; /* x-axis */
+  grid-row: 4/5; /* y-axis */
+  transform: translateY(200px);
+  z-index: 1;
+}
+
+.bozaiplay{
+  width: 800px;
+  grid-column: 1/14; /* x-axis */
+  grid-row: 4/5; /* y-axis */
+  transform: translateY(-300px);
+}
+
+.bozaicute{
+  width: 700px;
+  grid-column: 2/14; /* x-axis */
+  grid-row: 5/6; /* y-axis */
+  transform: translateY(-800px);
+  z-index: -1;
+}
+
+.bozaiunder{
+  width: 670px;
+  grid-column: 7/14; /* x-axis */
+  grid-row: 5/6; /* y-axis */
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
