@@ -122,13 +122,11 @@ img {
   
 }
 
-.bozaigarden{
-  width: 400px;
-  transform: rotate(-20deg)translateY(-150px); 
-  grid-column: 4/14; /* x-axis */
-  grid-row: 4/5; /* y-axis */
-  z-index: 1;
-  
+.bozaismile{
+  width: 200px;
+  grid-column: 9/10; /* x-axis */
+  grid-row: 1/2; /* y-axis */
+  transform: rotate(15deg) translateY(10px);
 }
 
 .bozaiwall{
